@@ -1,0 +1,21 @@
+<table>
+  <thead>
+    <tr>
+      <th>nombre</th>
+      <th>apellidos</th>
+      <th>titulacion</th>
+      <th>fecha Ing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let profesor of profesores">
+      <td>{{profesor.nombre}}</td>
+      <td>{{profesor.apellidos}}</td>
+      <td>{{profesor.titulacion}}</td>
+      <td>{{profesor.fechaIng}}</td>
+    </tr>
+    <tr *ngIf="visibles">
+      <td colspan="4">no hay alumnos</td>
+    </tr>
+  </tbody>
+</table>
